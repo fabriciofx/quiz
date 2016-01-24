@@ -8,7 +8,7 @@ public final class NonUnicode implements Content {
   public String data() throws IOException {
     return origin.data().replaceAll("\\P{Print}", "");
   }
-  public void save(final String content) throws IOException {
-    origin.save(content);
+  public void save(final String data) throws IOException {
+    origin.save(data);
   }
 }

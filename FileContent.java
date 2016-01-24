@@ -10,7 +10,7 @@ public final class FileContent implements Content {
   public String data() throws IOException {
     return new String(Files.readAllBytes(file.toPath()));
   }
-  public void save(final String content) throws IOException {
-    Files.write(file.toPath(), content.getBytes());
+  public void save(final String data) throws IOException {
+    Files.write(file.toPath(), data.getBytes());
   }
 }
